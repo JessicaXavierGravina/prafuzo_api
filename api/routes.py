@@ -133,9 +133,6 @@ def register_exit_page(vehicle_id):
         if parking_record is None:
             return jsonify(error='Veiculo nao encontrado'), 404
 
-        if not parking_record.get('entered', False):
-            return jsonify(error='Veiculo nao registrado na entrada.'), 400
-
         if not parking_record['left']:
             return jsonify(error='Saida nao permitida, o veiculo ainda nao registrou a entrada.'), 400
 
