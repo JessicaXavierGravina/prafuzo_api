@@ -103,5 +103,159 @@
         "time": "2023-10-03 09:45:15",
         "paid": true,
         "left": false
+    },
+    {
+        "id": 16,
+        "plate": "BVC-3456",
+        "time": "2023-10-03 11:10:25",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 17,
+        "plate": "HJK-9876",
+        "time": "2023-10-03 11:14:08",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 18,
+        "plate": "LPO-9876",
+        "time": "2023-10-03 11:16:33",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 19,
+        "plate": "UIO-7654",
+        "time": "2023-10-03 11:17:33",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 20,
+        "plate": "DEW-1234",
+        "time": "2023-10-03 11:18:56",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 21,
+        "plate": "bvc-2153",
+        "time": "2023-10-03 11:21:32",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 22,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:29:31",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 23,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:29:41",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 24,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:30:00",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 25,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:32:36",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 26,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:32:48",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 27,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:34:06",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 28,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:37:34",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 29,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:39:38",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 30,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:41:40",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 31,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:44:35",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 32,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:45:59",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 33,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:46:08",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 34,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 11:48:37",
+        "paid": false,
+        "left": false
+    },
+    {
+        "id": 35,
+        "plate": "BBB-1234",
+        "time": "2023-10-03 11:51:00",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 36,
+        "plate": "ABC-1234",
+        "time": "2023-10-03 11:52:24",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 37,
+        "plate": "KLP-8989",
+        "time": "2023-10-03 11:52:38",
+        "paid": true,
+        "left": false
     }
 ]

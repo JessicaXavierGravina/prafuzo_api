@@ -12,11 +12,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///parking.db'
 database = SQLAlchemy(app)
 
 # Configuração do MongoDB
-MONGO_HOST = 'MONGOHOST'
+MONGO_HOST = 'roundhouse.proxy.rlwy.net'
 MONGO_PORT = 32894
 MONGO_USER = 'mongo'
 MONGO_PASSWORD = '4+Dee54ahcfB2-1fa2e2+EdDab1DD4Da'
-MONGO_DATABASE = 'parafuzo'
+MONGO_DATABASE = 'test'
 
 if os.getenv('DATABASE_URL'):
     MONGODB_URI = os.getenv('DATABASE_URL')
