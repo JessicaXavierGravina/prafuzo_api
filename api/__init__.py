@@ -3,9 +3,7 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from pymongo import MongoClient
 import os
-import json
 from decouple import config
-
 
 
 app = Flask(__name__)
