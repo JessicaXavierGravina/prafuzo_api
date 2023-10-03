@@ -257,5 +257,12 @@
         "time": "2023-10-03 11:52:38",
         "paid": true,
         "left": false
+    },
+    {
+        "id": 38,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 12:10:12",
+        "paid": true,
+        "left": false
     }
 ]

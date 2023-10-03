@@ -4,6 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 from pymongo import MongoClient
 import os
 import json
+from decouple import config
+
+
 
 app = Flask(__name__)
 
@@ -12,11 +15,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///parking.db'
 database = SQLAlchemy(app)
 
 # Configuração do MongoDB
-MONGO_HOST = 'roundhouse.proxy.rlwy.net'
-MONGO_PORT = 32894
-MONGO_USER = 'mongo'
-MONGO_PASSWORD = '4+Dee54ahcfB2-1fa2e2+EdDab1DD4Da'
-MONGO_DATABASE = 'test'
+MONGO_HOST = config('MONGO_HOST')
+MONGO_PORT = config('MONGO_PORT', default=27017, cast=int)
+MONGO_USER = config('MONGO_USER')
+MONGO_PASSWORD = config('MONGO_PASSWORD')
+MONGO_DATABASE = config('MONGO_DATABASE')
 
 if os.getenv('DATABASE_URL'):
     MONGODB_URI = os.getenv('DATABASE_URL')
