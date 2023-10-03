@@ -1,4 +1,4 @@
-from flask import request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template
 import json
 import os
 from datetime import datetime
@@ -41,7 +41,7 @@ def index():
     return render_template('home.html')
 
 
-# Rota para registrar a entrada de veiculo
+#Rota para registrar a entrada de veiculo
 @app.route('/parking', methods=['GET', 'POST'])
 def register_entry_page():
     if request.method == 'POST':
@@ -122,7 +122,6 @@ def register_entry_page():
 
     return render_template('register_entry.html')
 
-
 @app.route('/parking/<int:vehicle_id>/out', methods=['GET', 'POST'])
 def register_exit_page(vehicle_id):
     if request.method == 'POST':
@@ -144,28 +143,6 @@ def register_exit_page(vehicle_id):
         return jsonify(message='Pagamento efetuado, o veiculo saiu.'), 200
 
     return render_template('register_exit.html', vehicle_id=vehicle_id)
-
-
-# Rota para registrar a saida de veiculo usando PUT
-@app.route('/parking/<int:id>/out', methods=['PUT', 'GET'])
-def register_exit_put(id):
-    if request.method == 'PUT':
-        parking_record = next((record for record in parking_records if record['id'] == id), None)
-
-        if parking_record is None:
-            return jsonify(error='Reserva nao encontrada'), 404
-
-        if not parking_record['paid']:
-            return jsonify(error='e necessario pagar antes de sair'), 400
-
-        plate = parking_record['plate']
-        if not is_plate_registered(plate):
-            return jsonify(error='Placa nao registrada na entrada'), 400
-
-        parking_record['left'] = True
-        return jsonify(message='O veiculo saiu'), 200
-
-    return render_template('register_exit.html')
 
 
 # Rota adicional para pagina de registro de saida
@@ -211,7 +188,7 @@ def parking_history():
         if record['left']:
             entry_time = record['time']
             exit_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            paid_status = 'Pago' if record['paid'] else 'Não Pago'
+            paid_status = 'Pago' if record['paid'] else 'Nao Pago'
 
             history.append({
                 'plate': record['plate'],

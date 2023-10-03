@@ -362,5 +362,33 @@
         "time": "2023-10-03 14:39:55",
         "paid": false,
         "left": false
+    },
+    {
+        "id": 53,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 14:57:13",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 54,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 14:59:53",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 55,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 15:07:59",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 56,
+        "plate": "AAA-1234",
+        "time": "2023-10-03 15:10:17",
+        "paid": true,
+        "left": false
     }
 ]
