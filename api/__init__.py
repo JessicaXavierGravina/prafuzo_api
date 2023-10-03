@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, request, jsonify, render_template
+from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from pymongo import MongoClient
 import os
+import json
 
 app = Flask(__name__)
 
@@ -21,8 +23,9 @@ if os.getenv('DATABASE_URL'):
 else:
     MONGODB_URI = f'mongodb://{MONGO_USER}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/{MONGO_DATABASE}'
 
-client = MongoClient(MONGODB_URI)
-mongo_db = client.get_database()
+# Instância do PyMongo para se conectar ao MongoDB
+mongo = MongoClient(MONGODB_URI)
+mongo_db = mongo[MONGO_DATABASE]
 
 # try:
 #     client = MongoClient(MONGODB_URI)
