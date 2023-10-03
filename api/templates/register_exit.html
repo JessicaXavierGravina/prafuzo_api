@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Saída</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #1B7C11;
+            color: #fff;
+
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #1B7C11;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registro de Saída</h1>
+    </header>
+    <div class="container">
+        <form method="POST" action="/parking/1/out">
+<!--        <form method="POST" action="/parking/{{ vehicle_id }}/out">-->
+            <label for="plate">Placa do Veículo:</label>
+            <input type="text" id="plate" name="plate" required>
+            <br>
+            <label for="paid">Status de Pagamento:</label>
+            <select id="paid" name="paid">
+                <option value="1">Pago</option>
+                <option value="0">Não pago</option>
+            </select>
+            <br>
+            <button type="submit">Registrar Saída</button>
+        </form>
+    </div>
+</body>
+</html>

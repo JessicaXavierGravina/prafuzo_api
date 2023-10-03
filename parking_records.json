@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "plate": "AAA-1234",
+        "time": "Entry time",
+        "paid": true,
+        "left": true
+    },
+    {
+        "id": 2,
+        "plate": "AAA-1236",
+        "time": "Entry time",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 3,
+        "plate": "BBB-1233",
+        "time": "Entry time",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 4,
+        "plate": "BBB-1234",
+        "time": "Entry time",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 5,
+        "plate": "BNC-1234",
+        "time": "2023-10-02 21:07:25",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 6,
+        "plate": "ABC-1234",
+        "time": "2023-10-02 21:08:28",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 7,
+        "plate": "BBB-1236",
+        "time": "2023-10-02 21:26:30",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 8,
+        "plate": "ICS-1234",
+        "time": "2023-10-02 21:27:22",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 9,
+        "plate": "AAA-1238",
+        "time": "2023-10-02 21:28:19",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 10,
+        "plate": "FFF-1112",
+        "time": "2023-10-02 21:30:16",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 11,
+        "plate": "AAA-1233",
+        "time": "2023-10-02 21:32:48",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 12,
+        "plate": "AAA-1853",
+        "time": "2023-10-02 22:02:57",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 13,
+        "plate": "AAA-1268",
+        "time": "2023-10-02 22:22:13",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 14,
+        "plate": "AAA-1231",
+        "time": "2023-10-02 22:41:00",
+        "paid": true,
+        "left": false
+    },
+    {
+        "id": 15,
+        "plate": "AAA-1888",
+        "time": "2023-10-03 09:45:15",
+        "paid": true,
+        "left": false
+    }
+]

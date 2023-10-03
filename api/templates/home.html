@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1B7C11;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 20 5px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 7px;
+            position: relative;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Controle de Estacionamento</h1>
+    </header>
+    <div class="container">
+        <div class="text">
+            <p>Bem-vindo à nossa página de controle de estacionamento.</p>
+            <p>Use nossa API para registrar entradas, saídas e pagamentos de veículos.</p>
+            <p>Para começar, <a href="/parking">clique aqui</a> para registrar a entrada de um veículo.</p>
+        </div>
+        <img src="/static/logo.png" alt="Logo da empresa" class="logo">
+    </div>
+</body>
+</html>

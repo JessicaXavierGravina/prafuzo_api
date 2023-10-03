@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historico</title>
+</head>
+<body>
+    <h1>Historico</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Saida</th>
+                <th>Pagamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in history %}
+            <tr>
+                <td>{{ record.plate }}</td>
+                <td>{{ record.entry_time }}</td>
+                <td>{{ record.exit_time }}</td>
+                <td>{{ record.paid }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
